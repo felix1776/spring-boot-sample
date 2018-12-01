@@ -42,6 +42,11 @@ make deploy-production-ssh
 '''
       }
     }
+    stage('clean') {
+      steps {
+        sh 'docker-compose run clean'
+      }
+    }
   }
   post {
     always {
