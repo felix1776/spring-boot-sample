@@ -47,6 +47,7 @@ make deploy-production-ssh
     always {
       sh 'docker-compose run clean'
       echo 'I will always say Hello again!'
+
     }
 
     success {
